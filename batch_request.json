@@ -1,0 +1,43 @@
+{
+  "requests": [
+    {
+      "drone_id": "drone-01",
+      "timestamp": "2026-04-28T12:00:00Z",
+      "rgb_anomaly_score": 0.78,
+      "thermal_heat_index": 85.0,
+      "human_signature_score": 0.12,
+      "environmental": {
+        "temperature_celsius": 43.5,
+        "humidity_pct": 31.2,
+        "co_ppm": 145.0,
+        "pressure_hpa": 975.0
+      }
+    },
+    {
+      "drone_id": "drone-02",
+      "timestamp": "2026-04-28T12:05:00Z",
+      "rgb_anomaly_score": 0.9,
+      "thermal_heat_index": 20.0,
+      "human_signature_score": 0.8,
+      "environmental": {
+        "temperature_celsius": 25.0,
+        "humidity_pct": 60.0,
+        "co_ppm": 10.0,
+        "pressure_hpa": 1010.0
+      }
+    },
+    {
+      "drone_id": "drone-03",
+      "timestamp": "2026-04-28T12:10:00Z",
+      "rgb_anomaly_score": 0.1,
+      "thermal_heat_index": 30.0,
+      "human_signature_score": 0.05,
+      "environmental": {
+        "temperature_celsius": 20.0,
+        "humidity_pct": 80.0,
+        "co_ppm": 5.0,
+        "pressure_hpa": 1020.0
+      }
+    }
+  ]
+}
