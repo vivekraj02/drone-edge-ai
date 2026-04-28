@@ -65,6 +65,29 @@ Navigate to `http://localhost:8000/dashboard` in your browser to access the inte
 - `POST /batch_infer` — Batch processing of multiple sensor frames
 - `GET /dashboard` — Interactive web dashboard
 
+## Deployment
+
+This project is a FastAPI backend with a dynamic dashboard endpoint. To deploy it publicly, you should host the application on a cloud service that supports Python web apps.
+
+Recommended cloud hosts:
+
+- **Render** — free tier for web services, simple `uvicorn` deployment
+- **Railway** — quick deployment from GitHub with automatic builds
+- **Fly.io** — lightweight container deployment for Python apps
+- **Azure App Service** — Windows or Linux-hosted Python web app
+
+Example deploy command for a host that runs `uvicorn`:
+
+```powershell
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+
+Once deployed, the dashboard will be available at `https://<your-host>/dashboard`.
+
+### GitHub Pages note
+
+GitHub Pages can only host static sites. Because this dashboard is served dynamically from FastAPI, GitHub Pages cannot run it directly. If you want a static landing page there, you can host a separate static page on GitHub Pages and point it to your cloud-hosted FastAPI backend.
+
 ## Testing
 
 Run the included PowerShell test script:
